@@ -10,7 +10,7 @@ class Dog
     @owner = owner 
     @mood = "nervous"
     @@all << self 
-    binding.pry 
+    #binding.pry 
   end 
   
   def self.all 
