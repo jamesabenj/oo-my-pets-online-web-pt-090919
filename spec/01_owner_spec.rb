@@ -21,7 +21,7 @@ describe Owner do
     describe "#species" do
       it "initializes with species set to human" do
         expect(@owner.species).to eq("human")
-      end
+      end 
 
       it "can't change its species" do
         expect { @owner.species = "hamster" }.to raise_error NoMethodError
