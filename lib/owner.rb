@@ -32,7 +32,7 @@ class Owner
   end 
   
   def dogs 
-    Dog.all.select {|dogs| dogs.owner.name == self.name}
+    Dog.all.map {|dogs| dogs.owner.name == self.name}
     #binding.pry 
   end 
   
